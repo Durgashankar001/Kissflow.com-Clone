@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: inherit;
+}
+.container{
+    width: 100%;
+    height: 700px;
+    background-color: #000000;
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.container .content{
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    z-index: 3;
+}
+.container .heading{
+    width: 700px;
+    margin: auto;
+    color: #ffff;
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 25px;
+}
+.container .content .heading h1{
+    letter-spacing: 2px;
+}
+.container .para{
+    width: 900px;
+    margin: auto;
+    font-size: 1rem;
+    color: #ffff;
+    margin-bottom: 25px;
+}
+.container .content .btn{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.container .content .btn button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: #0565ff;
+    color: #ffff;
+    cursor: pointer;
+    z-index: 10;
+}
+.container .content .btn button:hover,.bottom_section .last_content .btnc button:hover{
+    background-color: #0341a5;
+}
+.container svg{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.container img{
+    position: absolute;
+}
+.container img{
+    right: -2%;
+    bottom: 0%;
+}
+.container .img2
+{
+    top: 0;
+    left: -5%;
+}
+.container .img3
+{
+    right: -5%;
+    top: -5%;
+    animation: circle 8s linear infinite;
+   
+}
+.container .img4
+{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+    animation: circle 15s linear infinite;
+    backdrop-filter: blur(20px);
+    
+    
+}
+.container .img5
+{
+    top: 0;
+    left: 10%;
+    animation: circle 10s linear infinite;
+}
+.container .img6
+{
+    top: 50%;
+    left: 55%;
+    animation: circle 6s linear infinite;
+}
+.container .img7
+{
+    top: 50%;
+    left: 20%;
+    animation: circle 7s linear infinite;
+}
+.container .img8
+{
+    top: 70%;
+    left: 60%;
+    animation: circle 9s linear infinite;
+}
+.container .img9
+{
+    width: 200px;
+    height: 200px;
+    bottom: 0%;
+    left: 10%;
+    animation: circle 12s linear infinite;
+}
+.container .img10
+{
+    bottom: 10%;
+    left: 60%;
+    animation: circle 12s linear infinite;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    
+}
+.container .img11
+{
+    top: 10%;
+    left: 60%;
+    animation: circle 12s linear infinite;
+}
+@keyframes circle{
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-50px,-50px);
+    }
+    50%{
+        transform: translate(50px,-100px);
+    }
+    75%{
+        transform: translate(100px,-50px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.section1{
+    position: relative;
+    background-color: #ecf3ff;
+    z-index: 2;
+}
+.cr_wh{
+    background-color: #ffff;
+}
+.cr_sky{
+    background-color: #f9fafa;
+}
+.section1 .content1{
+    display: flex;
+    width: 100%;
+    padding: 20px 20px 40px 50px;
+    justify-content: space-evenly;
+}
+.section1 .content1 .sub_content{
+    width: 35%;
+    padding: 60px 40px;
+}
+.section1 .content1 .sub_content .main_content h1{
+    font-size: 2.2rem;
+    font-weight: bold 700;
+}
+.section1 .content1 .sub_content .main_content p{
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 40px;
+    font-weight: 400;
+}
+.section1 .content1 .sub_content1{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section1 .content1 .sub_content1 .multi_content{
+    width: 50%;
+    padding: 15px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.section1 .content1 .sub_content1 .multi_content img{
+    margin: 15px 0px;
+}
+.section1 .content1 .sub_content1 .multi_content h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section1 .content1 .sub_content1 .multi_content p{
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    line-height: 32px;
+    font-weight: 400;
+}
