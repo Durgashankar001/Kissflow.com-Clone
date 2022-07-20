@@ -1,0 +1,58 @@
+#navbar{
+    /* border: 1px solid red; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 100px;
+   
+    
+}
+#navbar>div{
+display: flex;
+justify-content: space-around;
+width: 40%;    
+/* border: 1px solid green; */
+
+}
+#navbar>:nth-child(2){
+   
+    width: 35%;
+}
+button,select{
+    border-color: azure;
+    background-color: white;
+}
+.blue{
+    background-color: rgb(18, 18, 224);
+    color: aliceblue;
+    border-radius: 10px;
+}
+#container1{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+    height: 500px;
+    margin-top: 10px;
+}
+#container1 > div{
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    width: 50%;  
+    font-size: 25px;         
+}
+#container1 > div> img{
+    width: 90%;
+    height: 100%;
+}
+#container1 >div> button{
+    font-size: 25px;
+    padding: 15px 32px;
+}
+#container1 >div>p{
+    font-size: 17px;
+}
