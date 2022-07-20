@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+/* font-family: var(--bs-font-sans-serif); */
+font-size: 1.2rem;
+font-weight: 480 ;
+/* line-height: 1rem; */
+/* color: #1d2b36; */
+background-color: #fff;
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: transparent;
+}
+    #navbar{
+        width:100%;
+        height:65px;
+       
+        display: flex;
+        justify-content:space-around;
+        text-align: center;
+      
+        place-items: center;
+        /* border: 1px solid; */
+        font-family:Graphik Web Regular,sans-serif!important; 
+        position: relative;
+        color: black;
+    }
+    .first-div{ 
+        place-items: center;
+        display: flex;
+        justify-content: space-between;
+         gap:5px;
+        position: relative;
+        color: black;
+        /* border:1px solid; */
+    }
+    .first-div li{
+        /* border: 1px solid; */
+    }
+
+    .second-div{
+        place-items: center;
+         display: flex; 
+        justify-content: space-between; 
+        gap:5px; 
+        position: relative;
+        color: black;
+    }
+   button{
+    font-size: large;
+    font-weight:6px;
+    padding:5px 12px 5px 12px;
+    color:#fff;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+   }
+   button:hover{
+    background-color: rgb(89, 89, 179);
+    cursor: pointer;
+   }
+   .first-div li{
+    /* text-align: center; */
+    /* padding-left: 0px; */
+    padding:19px;
+   
+   }
+  .first-div li:hover{
+     border-bottom:2px solid blue;
+     cursor: pointer;
+  }
+  .second-div li:hover{
+   color:blue;
+   cursor: pointer;
+   
+  }
+ 
+
+  #navbar ul li{
+    list-style-type: none;
+ 
+    position :relative;
+  }
+
+  #navbar ul li a{
+ 
+    text-decoration: none;
+ 
+    line-height: 32px;
+    padding:0 15px;
+
+     color:black; 
+
+  }
+  #navbar ul ul{
+    color: black;
+    margin:-20px;
+    padding:0;
+    position: absolute;
+    top: 60px;
+    display:none;
+    width: 170px;
+    height:170px;
+    padding-left: 13px;
+    /* place-items: center; */
+    /* text-align: center;
+    justify-content: center; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  }
+  
+  #navbar ul ul li{
+   
+   
+    float:none;
+     display:list-item; 
+    position: relative;
+ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  
+  }
+  #navbar ul li:hover>ul{
+   display:block;
+   /* text-align: center; */
+  justify-content: center;
+  
+  }
+  /* #navbar ul ul li:hover{
+    color:blue;
+  
+  } */
+.platform{
+    padding-bottom: 100px;
+}
+  
