@@ -56,3 +56,32 @@ button,select{
 #container1 >div>p{
     font-size: 17px;
 }
+#container2{
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+#container3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,300px);
+    /* border: 1px solid forestgreen; */
+}
+#container3>div{
+     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+     width: 70%;
+     margin: auto;
+     font-size: 18px;
+     /* border: 1px rgb(103, 5, 5); */
+     padding: 10px ;
+     
+}
+#container3>div>p{
+    color: rgb(74, 73, 73);
+}
+#container4{
+    font-size: 22px;
+}
+
+
