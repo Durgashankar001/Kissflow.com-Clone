@@ -47,7 +47,7 @@
     box-sizing: border-box;
 }
 
-h1 {
+#main-head {
     text-align: center;
     background-color: #0565ff;
     background-image: linear-gradient(45deg,#0565ff,#d341a5);
@@ -188,7 +188,7 @@ iframe {
 #good_customers {
     /* border: 1px solid red; */
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     background-color: #f8f9f9;
 }
 
@@ -213,7 +213,7 @@ iframe {
     margin: auto;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 50px;
     margin-top: -15px;
 }
 
@@ -223,5 +223,202 @@ iframe {
     display: block;
 }
 
+.tabs {
+    position: absolute;
+    left: 9%;
+    /* border: 2px solid black; */
+    width: 80%;
+    height: 600px;
+}
+
+.tabs .tab-header {
+    padding: 10px;
+    display: flex;
+    margin: 0px;}
+
+.tabs .tab-header > div {
+    position: relative;
+    /* width: 80%; */
+    text-align: center;
+    padding: 10px 20px;
+    z-index: 2;
+    font-weight: lighter;
+    cursor: pointer;
+    font-size: 20px;
+    /* color: white; */
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tabs .tab-header > div.active {
+    color: white;
+    background-color: #0565ff;
+    border: 1px solid #0565ff;
+}
+
+.tabs .tab-indicator {
+    position: absolute;
+    width: calc(14% - 5px);
+    height: 40px;
+    /* background: #0565ff; */
+    top: 12px;
+    left: 10px;
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+
+}
 
 
+.tabs .tab-body {
+    position: relative;
+    padding: 10px;
+    /* border-top: 1px solid #ddd; */
+    height: calc(100% - 50px);
+    overflow: hidden;
+}
+
+.tabs .tab-body > div {
+    position: absolute;
+    opacity: 0;
+    top: -100%;
+    transform: translateY(-10px);
+    transition: opacity 300ms ease-in-out,
+                transform 300ms ease-in-out;
+
+}
+
+.tabs .tab-body > div.active {
+    transform: translateY(0px);
+    top: 30px;
+    opacity: 1;
+}
+
+.tabs .tab-body h1 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.tabs .tab-body p {
+    color: #555;
+    font-size: 15px;
+}
+
+.active > img {
+    width: 100%;
+}
+
+#mid-head {
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 70px;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab-2 {
+    display: flex;
+    padding: 0px;
+}
+
+
+.tab-2 > div:first-child {
+    margin-top: 65px;
+    /* border: 1px solid red; */
+    width: 450px;
+}
+
+/* #x {
+    margin-right: -440px;
+    margin-left: 0px;
+} */
+
+.tab-2 > div:first-child > h2 {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.x {
+    width: 600px;
+    margin-left: -10px;
+}
+
+.tab-2 > div:first-child > h4{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab-2 > div:first-child > a {
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 30px;
+    color: #0565ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab-header > div:hover {
+    background-color: #d5dce1;
+}
+
+#adv-section {
+    /* border: 1px solid red; */
+    width: 85%;
+    margin: auto;
+    margin-top: 700px;
+    display: flex;
+}
+
+#adv-section > div:first-child {
+    /* border: 1px solid teal; */
+    width: 59%;
+    height: 100%;
+}
+
+#adv-section > div:first-child > h2 {
+    margin-top: -40px;
+    padding-right: 2rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 4rem;
+    /* letter-spacing: -2px; */
+    color: #1d2b36;
+    font-family: 'Roboto', sans-serif;
+}
+
+#text-pink {
+    color: #b22485;
+    /* letter-spacing: -2px; */
+    font-size: 3rem;
+    line-height: 4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#text-charcoal {
+    color: #748494;
+    padding-bottom: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-weight: lighter;
+    /* letter-spacing: -.4px; */
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#adv-section > div:last-child > img {
+    width: 80%;
+    /* height: auto; */
+    display: block;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+
+#xyz {
+    border: 1px solid red;
+    width: 100%;
+    height: 500px;
+}
