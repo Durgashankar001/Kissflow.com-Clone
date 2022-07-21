@@ -222,3 +222,44 @@
     line-height: 32px;
     font-weight: 400;
 }
+.bottom_section{
+    width: 100%;
+}
+.bottom_section .last_content{
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    padding: 50px 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bottom_section .last_content .hc{
+    width: 60%;
+    font-size: 2.5rem;
+    
+}
+.bottom_section .last_content .hc h1{
+    margin: 20px 0px;
+}
+.bottom_section .last_content .btnc{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.bottom_section .last_content .btnc button{
+    padding: 18px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: #0565ff;
+    color: #ffff;
+    cursor: pointer;
+    z-index: 10;
+}
