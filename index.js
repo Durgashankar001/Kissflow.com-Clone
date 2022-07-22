@@ -1,10 +1,15 @@
+import footer from "../component/footer.js"
+
+document.getElementById("footer").innerHTML = footer();
+
+
 let video = document.getElementById("home-video-content");
 let button = document.getElementById("play");
 
 let source = 'https://www.youtube.com/embed/VpeWhXL8AG8?autoplay=1&showinfo=0&modestbranding=1&rel=0&mute=0&vq=hd720';
 
-button.addEventListener("click", function(event){
-    video.innerHTML = `
+button.addEventListener("click", function (event) {
+  video.innerHTML = `
     <div class="modal-content rounded-0">
     <div class="modal-body bg-dark p-0">
     <div class="ratio ratio-16x9"> 
@@ -14,7 +19,7 @@ button.addEventListener("click", function(event){
       </div>
       </div>`
 
-      document.getElementById("container").style.filter = "blur(10px)";
+  document.getElementById("container").style.filter = "blur(10px)";
 
 })
 
@@ -35,8 +40,8 @@ let tabIndicator = tabs.querySelector(".tab-indicator");
 let tabHeaderNodes = tabs.querySelectorAll(".tab-header > div");
 let tabBodyNodes = tabs.querySelectorAll(".tab-body > div");
 
-for(let i=0; i<tabHeaderNodes.length; i++){
-  tabHeaderNodes[i].addEventListener("click",function(){
+for (let i = 0; i < tabHeaderNodes.length; i++) {
+  tabHeaderNodes[i].addEventListener("click", function () {
     tabHeader.querySelector(".active").classList.remove("active");
     tabHeaderNodes[i].classList.add("active");
     tabBody.querySelector(".active").classList.remove("active");
