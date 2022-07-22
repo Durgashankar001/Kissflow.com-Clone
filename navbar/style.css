@@ -38,9 +38,7 @@ position: relative;
         color: black;
         /* border:1px solid; */
     }
-    .first-div li{
-        /* border: 1px solid; */
-    }
+   
 
     .second-div{
         place-items: center;
