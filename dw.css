@@ -83,5 +83,142 @@ button,select{
 #container4{
     font-size: 22px;
 }
+.container5{
+    /* border: 1px solid black; */
+    text-align: center;
+    line-height: 10px;
+    font-size: 25px;
+    padding-top: 20px;
+}
+#container6{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,600px);
+    /* border: 1px solid blue; */
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+}
+#container6>div{
+    /* border: 1px solid green; */
+    line-height: 30px;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 30px;
+    
+}
+#container6>div>img{
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    padding-left: 25px;
+   
+}
+#container6>div>p{
+    color: rgb(55, 54, 54);
+}
+#container6>div:nth-child(1){
+    background-color: rgb(197, 221, 221);
+}
+#container6>div:nth-child(2){
+    background-color: rgb(251, 226, 229);
+}
+#container6>div:nth-child(3){
+    background-color: rgb(206, 206, 217);
+}
+#container6>div:nth-child(4){
+    background-color: rgb(200, 241, 200);
+}
+#container7{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+    width: 75%;
+    padding-top: 40px;
+    margin: auto;
+    gap: 60px;
+/*     
+   border: 1px solid red; */
+   
+}
+#container7>div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    line-height: 35px;
+    padding: 15px;
+    text-align: center;
+    font-size: 17px;
+}
+#container7>div>p{
+    line-height: normal;
+    color: rgb(55, 54, 54);
+}
+a{
+    text-decoration: none;
+}
+#container8{
+    /* border: 1px solid red; */
+    padding-top: 50px;
+    font-size: 25px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#container9{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+    gap: 60px;
+    border-radius: 20px;
+    background-color: rgb(237, 237, 242);
+    padding: 20px;
+   
+}
+#container9>div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-size: 22px;
+    color: rgb(37, 37, 37);
+    padding: 20px;
+   
+    
+    
+}
+#container10{
+    /* border: 1px solid red; */
+    width: 75%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    background-color: black;
+   margin-top: 100px;
+   border-radius: 20px;
+   padding: 30px;
+    
+    
+}
+#container10>div{
+    /* border: 1px solid green; */
+    width: 45%;
+    height: 60%;
+    margin: auto;
+    color: aliceblue;
+    font-size: 20px;
+    /* border: 1px solid yellowgreen; */
+    
+    text-align: center;
+    
+    
+}
+#container10 >div> button{
+    font-size: 25px;
+    padding: 15px 32px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+
 
 
