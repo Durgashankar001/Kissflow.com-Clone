@@ -23,7 +23,7 @@
             <p>Kissflow Digital Workplace has everything your team needs to manage any kind of work that comes their way. From highly structured and sophisticated processes to quick project boards, all of your work can live on one platform. </p>
         </div>
         <div class="btn">
-            <button>Get Started</button>
+            <button id="gr">Get Started</button>
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#ecf3ff" fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,229.3C640,213,800,139,960,128C1120,117,1280,171,1360,197.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
@@ -213,7 +213,7 @@
             <h1>See what a complete Digital Workplace looks like.</h1>
         </div>
         <div class="btnc btn">
-            <button>Get Started</button>
+            <button id="gr1">Get Started</button>
         </div>
     </div>
 </div>
@@ -283,6 +283,31 @@ document.getElementById("footer").innerHTML = footer();
 document.getElementById("workplace").onclick =() =>{
     window.location.href="./digitalworkplace.html"
 }
+
+let sign_data = JSON.parse(localStorage.getItem("sign"));
+if(sign_data==null){
+  document.getElementById("login").innerText="Login"
+  document.getElementById("login").style.marginRight="8px"
+}else{
+  document.getElementById("login").innerText="Log Out"
+  document.getElementById("login").style.marginRight="8px"
+}
+
+document.getElementById("workplace").addEventListener("click",function(){
+  window.location.href="digitalworkplace.html"
+})
+document.getElementById("pr").addEventListener("click",function(){
+  window.location.href="pricing.html"
+})
+document.getElementById("cr").addEventListener("click",function(){
+  window.location.href="customer.html"
+})
+document.getElementById("gr").addEventListener("click",function(){
+  window.location.href="checkout.html"
+})
+document.getElementById("gr1").addEventListener("click",function(){
+  window.location.href="checkout.html"
+})
 
 </script>
 </html>

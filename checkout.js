@@ -4,6 +4,25 @@ import footer from "../component/footer.js"
 
 
 document.getElementById("footer").innerHTML = footer();
+
+let sign_data = JSON.parse(localStorage.getItem("sign"));
+if(sign_data==null){
+    document.getElementById("login").innerText="Login"
+    document.getElementById("login").style.marginRight="8px"
+  }else{
+    document.getElementById("login").innerText="Log Out"
+    document.getElementById("login").style.marginRight="8px"
+  }
+
+document.getElementById("workplace").addEventListener("click",function(){
+  window.location.href="digitalworkplace.html"
+})
+document.getElementById("pr").addEventListener("click",function(){
+  window.location.href="pricing.html"
+})
+document.getElementById("cr").addEventListener("click",function(){
+  window.location.href="customer.html"
+})
 document.querySelector(".card_number_input").oninput = () => {
     document.querySelector(".card_number_box").innerText = 
     document.querySelector(".card_number_input").value;

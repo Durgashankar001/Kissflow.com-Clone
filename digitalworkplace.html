@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Workplace</title>
+    <title>Digital Workplace | Overview | Kissflow Digital Workplace platform | kissflow.com</title>
+    <link rel = "icon" href ="https://kissflow.com/hubfs/kf_new_logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="dw.css" />
     <link rel="stylesheet" href="./navbar/style.css" />
     <script
@@ -47,7 +48,7 @@
           a glimpse into the digital workplace platform of the future and what
           it can do for you.
         </p>
-        <button class="blue">Get Started</button>
+        <button class="blue" id="gr">Get Started</button>
       </div>
     </div>
     <!-- 2nd part after navbar -->
@@ -262,7 +263,7 @@
         <h1>Kissflow Digital Workplace. At your fingertips.</h1>
       </div>
       <div>
-        <button class="blue">Get Started</button>
+        <button class="blue" id="gr1">Get Started</button>
       </div>
     </div>
     <div id="footer"></div>
@@ -414,5 +415,28 @@
     document.getElementById("workplace").onclick = () => {
       window.location.href = "./digitalworkplace.html";
     };
+    let sign_data = JSON.parse(localStorage.getItem("sign"));
+    if(sign_data==null){
+  document.getElementById("login").innerText="Login"
+  document.getElementById("login").style.marginRight="8px"
+}else{
+  document.getElementById("login").innerText="Log Out"
+  document.getElementById("login").style.marginRight="8px"
+}
+document.getElementById("workplace").addEventListener("click",function(){
+  window.location.href="digitalworkplace.html"
+})
+document.getElementById("pr").addEventListener("click",function(){
+  window.location.href="pricing.html"
+})
+document.getElementById("cr").addEventListener("click",function(){
+  window.location.href="customer.html"
+})
+document.getElementById("gr").addEventListener("click",function(){
+  window.location.href="customer.html"
+})
+document.getElementById("gr1").addEventListener("click",function(){
+  window.location.href="customer.html"
+})
   </script>
 </html>

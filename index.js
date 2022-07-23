@@ -9,6 +9,41 @@ document.getElementById("login").addEventListener("click", toggle);
 document.getElementById("class1").addEventListener("click", toggle);
 document.getElementById("signin-btn1").addEventListener("click", signup);
 
+let sign_data = JSON.parse(localStorage.getItem("sign"));
+
+if(sign_data==null){
+  document.getElementById("login").innerText="Login"
+  document.getElementById("login").style.marginRight="8px"
+}else{
+  document.getElementById("login").innerText="Log Out"
+  document.getElementById("login").style.marginRight="8px"
+}
+
+document.getElementById("workplace").addEventListener("click",function(){
+  window.location.href="digitalworkplace.html"
+})
+document.getElementById("pr").addEventListener("click",function(){
+  window.location.href="pricing.html"
+})
+document.getElementById("cr").addEventListener("click",function(){
+  window.location.href="customer.html"
+})
+document.getElementById("gr").addEventListener("click",function(){
+  if(document.getElementById("login").innerText=="Log Out"){
+    window.location.href="digitalworkplace.html"
+  }else{
+    window.location.href="signin.html"
+  }
+  
+})
+document.getElementById("gr2").addEventListener("click",function(){
+  if(document.getElementById("login").innerText=="Log Out"){
+    window.location.href="digitalworkplace.html"
+  }else{
+    window.location.href="signin.html"
+  }
+})
+
 function toggle() {
   var blur = document.getElementById("container1");
   blur.classList.toggle("active");

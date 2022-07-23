@@ -131,8 +131,8 @@ let navbar = () => {
                             </div>
                          </div>
                         <div class="inner-div2"> <img  class="div-img" src="https://kissflow.com/hubfs/Digital%20Workplace.svg" alt="">
-                            <div class="details">
-                            <h3  id="workplace">Digital Workplace</h3>
+                            <div class="details"  id="workplace">
+                            <h3 >Digital Workplace</h3>
                                 <p>Discover the perfect platform to complete your journey</p>
                             </div> 
                         </div>
@@ -151,8 +151,8 @@ let navbar = () => {
         </ul>
       
         <ul class="second-div">
-            <li>Pricing<a href="#"></a></li>
-            <li>Customers<a href="#"></a></li>
+            <li id="pr">Pricing<a href="pricing.html"></a></li>
+            <li id="cr">Customers<a href="#"></a></li>
             <li>Resources  <i class="fa-solid fa-angle-down"></i><a href="#"></a>
                 <ul>
                     <li>Success Stories<a href="#"></a></li>

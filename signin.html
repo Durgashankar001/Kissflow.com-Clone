@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign in | Kissflow Digital Workplace platform | kissflow.com</title>
+    <link rel = "icon" href ="https://kissflow.com/hubfs/kf_new_logo.png" type = "image/x-icon">
     <style>
       * {
         margin: 0;
@@ -193,12 +194,13 @@
 
     user.forEach((el, i) => {
       if (el.user_name == signin_username && el.password == signin_password) {
-        flag == true;
+        flag = true;
       }
     });
     if (flag == true) {
       alert("sign in Successful");
       window.location.href = "index.html";
+      localStorage.setItem("sign",JSON.stringify("sign out"))
     } else {
       alert("create an account first");
     }

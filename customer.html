@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer.page</title>
+    <title>Coustomer | Kissflow Digital Workplace platform | kissflow.com</title>
+    <link rel = "icon" href ="https://kissflow.com/hubfs/kf_new_logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
     <link rel="stylesheet" href="customer.css" />
     <link rel="stylesheet" href="./navbar/style.css" />
@@ -361,7 +362,7 @@
     <div id="div11">
       <h1>Automate Work. Reduce Chaos</h1>
       <p>Drag & Drop. No Coding Required. Trusted by 10,000+ Companies.</p>
-      <button>Get Started</button>
+      <button id="gr">Get Started</button>
     </div>
     <div id="footer"></div>
   </body>
@@ -420,5 +421,26 @@
     document.getElementById("workplace").onclick = () => {
       window.location.href = "./digitalworkplace.html";
     };
+    let sign_data = JSON.parse(localStorage.getItem("sign"));
+    if(sign_data==null){
+  document.getElementById("login").innerText="Login"
+  document.getElementById("login").style.marginRight="8px"
+}else{
+  document.getElementById("login").innerText="Log Out"
+  document.getElementById("login").style.marginRight="8px"
+}
+
+document.getElementById("workplace").addEventListener("click",function(){
+  window.location.href="digitalworkplace.html"
+})
+document.getElementById("pr").addEventListener("click",function(){
+  window.location.href="pricing.html"
+})
+document.getElementById("cr").addEventListener("click",function(){
+  window.location.href="customer.html"
+})
+document.getElementById("gr").addEventListener("click",function(){
+  window.location.href="features.html"
+})
   </script>
 </html>
