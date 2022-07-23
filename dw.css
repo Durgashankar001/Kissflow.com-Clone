@@ -1,5 +1,5 @@
-#navbar{
-    /* border: 1px solid red; */
+/* #navbar{
+    border: 1px solid red;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -10,26 +10,40 @@
     font-size: 100px;
    
     
-}
-#navbar>div{
+} */
+/* #navbar>div{
 display: flex;
 justify-content: space-around;
 width: 40%;    
-/* border: 1px solid green; */
+border: 1px solid green;
 
 }
 #navbar>:nth-child(2){
    
     width: 35%;
 }
-button,select{
-    border-color: azure;
-    background-color: white;
-}
+*/
 .blue{
     background-color: rgb(18, 18, 224);
     color: aliceblue;
     border-radius: 10px;
+} 
+#container1 button,select{
+    border-color: azure;
+    /* background-color: white; */
+    margin-top: 20px;
+}
+#nav{
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#class1{
+    color: black;
+    cursor: pointer;
 }
 #container1{
     display: flex;
@@ -83,12 +97,24 @@ button,select{
 #container4{
     font-size: 22px;
 }
-.container5{
-    /* border: 1px solid black; */
+.container50 h1{
     text-align: center;
     line-height: 10px;
-    font-size: 25px;
+    font-size: 30px;
     padding-top: 20px;
+    margin: auto;
+    width: 80%;
+
+}
+.container50>p{
+    text-align: center;
+    line-height: 10px;
+    font-size: 30px;
+    padding-top: 20px;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 25px;
+
 }
 #container6{
     display: grid;
@@ -218,6 +244,7 @@ a{
     text-align: center;
     border: 1px solid blue;
 }
+
 #container11{
     /* border: 1px solid red; */
     font-size: 18px;

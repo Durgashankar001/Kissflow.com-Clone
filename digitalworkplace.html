@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Workplace</title>
     <link rel="stylesheet" href="dw.css"/>
-    
-  
+    <link rel="stylesheet" href="./navbar/style.css">
+    <script src="https://kit.fontawesome.com/bd84d8e83c.js" crossorigin="anonymous"></script>  
 </head>
 <body>
     <!-- navbar -->
-    <div id="navbar">
-        <div>
+    <div id="nav">
+        <!-- <div>
 <img src="https://kissflow.com/hubfs/KF%20Brand%20Home/kissflow.svg" alt="">
 <select name="Platform" id="">
     <option value="">Platform</option>
@@ -29,7 +29,7 @@
 </select>
 <button>login</button>
 <button class="blue">Get Started</button>
-</div>
+</div> -->
 
 </div>
 <!-- 1st part after navbar -->
@@ -91,7 +91,7 @@
 
 </div>
 <!-- where can simple take you -->
-<div class="container5">
+<div class="container50">
     <h1>Where Can Simple Take You?</h1><br>
     <p>Here’s a peek into the future of work with Kissflow Digital Workplace.</p>
 </div>
@@ -119,7 +119,7 @@
     </div>
 </div>
 <!-- journey with KDW -->
-<div class="container5">
+<div class="container50">
         <h1>Your journey to simple begins with</h1><br>
         <h1>Kissflow Digital Workplace.</h1>
 </div>
@@ -223,4 +223,57 @@
 </div>
     
 </body>
+<script type="module">
+    import navbar from "../component/navbar.js"
+document.getElementById("nav").innerHTML = navbar()
+
+document.getElementById("login").addEventListener("click",toggle);
+document.getElementById("class1").addEventListener("click",toggle);
+document.getElementById("signin-btn1").addEventListener("click",signup);
+
+function toggle(){
+var blur=document.querySelector(".container");
+blur.classList.toggle('active')
+var popup=document.getElementById("popup");
+popup.classList.toggle('active')
+}
+
+function signup(){
+    window.location.href="signin.html"
+}
+
+
+function submitData(event){
+event.preventDefault()
+
+
+let form=document.getElementById("form")
+
+let user_name=form.user_name.value;
+let email= form.email.value;
+let password=form.password.value;
+
+let all_data= new Details(user_name,email,password)
+
+if(user_name =="" || email =="" || password=="" ){
+alert("fill all details")
+}
+else{
+let user= JSON.parse(localStorage.getItem("user")) || []
+user.push(all_data)
+localStorage.setItem("user",JSON.stringify(user))
+window.location.href="signin.html"
+}
+
+}
+
+
+class Details{
+    constructor(user_name,email,password){
+      this.user_name=user_name;
+      this.email=email;
+      this.password=password
+    }
+}
+</script>
 </html>

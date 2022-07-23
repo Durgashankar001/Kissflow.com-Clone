@@ -7,10 +7,23 @@
     outline: none;
     border: none;
 }
+.nav{
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 .container{
     width: 100%;
     margin: auto;
 }
+.container.active{
+    filter:blur(20px);
+    pointer-events:none;
+    user-select: none;
+    }
 .section1{
     width: 100%;
     height: 700px;
@@ -28,6 +41,10 @@
     max-width: 100%;
     opacity: 1;
     
+}
+#class1{
+    color: black;
+    cursor: pointer;
 }
 .section1::before{
     content: "";
@@ -336,3 +353,322 @@ margin-bottom: 1rem;
     margin-bottom: 50px;
     padding: 8px 0px;
 }
+.last_section{
+    background: #eeee;
+
+}
+  .last_section>.heading1{
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 50px;
+    padding-left: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    padding: 8px 0px;
+  }
+  .last_section>.heading1 h1{
+    margin-left: 15px;
+  }
+  .section4{
+    background: #eeee;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  .form_div{
+    width: 710px;
+    background-color: #ffff;
+    display: flex;
+    overflow: hidden;
+  }
+  .section4 form{
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    padding-top: 160px;
+    min-width: 100%;
+    position: relative;
+    left: 0px;
+    transition: 0.5s;
+  }
+  .otp{
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    height: 350px;
+    min-width: 700px;
+    margin-top: 170px;
+    position: relative;
+    transition: 0.5s;
+    left: 0px;
+    text-transform: none;
+    text-align: center;
+
+  }
+  .otp h1{
+    opacity: 0.9;
+  }
+  .otp .inputBox{
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+  }
+  .otp .inputBox input{
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+  }
+  .otp button{
+    width: 150px;
+    padding: 10px 15px;
+    background: linear-gradient(45deg,blueviolet,deeppink);
+    border-radius: 12px;
+    text-transform: uppercase;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .otp button:hover{
+    letter-spacing: 2px;
+    background: #333;
+    color: #ffff;
+  }
+  .section4 form .inputBox{
+    margin-top: 20px
+  }
+  .section4 form .inputBox span{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+  }
+  .section4 form .inputBox input,.section4 form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
+  }
+  .section4 form .flexBox{
+    display: flex;
+    gap: 15px;
+  }
+  .section4 form .flexBox .inputBox{
+    flex: 1 1 150px;
+  }
+  .section4 .submit_btn{
+    width: 100%;
+    background: linear-gradient(45deg,blueviolet,deeppink);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffff;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 5px;
+  }
+  .section4 .submit_btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+  }
+  .card_container{
+    margin-bottom: -150px;
+    position: relative;
+    width: 400px;
+    height: 250px;
+    z-index: 1;
+  }
+  .card_container .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg,blueviolet,deeppink);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgb(0,0,0,0.2);
+    transform: perspective(1000px) rotateY(0deg);
+    padding: 20px;
+    transition:transform .4s ease-out;
+  }
+  .card_container .front .image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .card_container .front .image img{
+    height: 50px;
+  }
+  .card_container .front .card_number_box{
+    padding: 30px 0;
+    font-size: 22px;
+    color: #ffff;
+  }
+  .card_container .front .flexBox{
+    display: flex;
+  }
+  .card_container .front .flexBox .box:nth-child(1)
+  {
+    margin-right: auto;
+  }
+  .card_container .front .flexBox .box
+  {
+    font-size: 15px;
+    color: #ffff;
+  }
+  .card_container .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,blueviolet,deeppink);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgb(0,0,0,0.2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+  }
+  .card_container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+  }
+  .card_container .back .box{
+    padding: 0 20px;
+  }
+  .card_container .back .box span{
+    color: #fff;
+    font-size: 15px;
+  }
+  .card_container .back .box .cvv_box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .card_container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+  }
+  #footer {
+    /* border: 1px solid red; */
+    width: 101.1%;
+    height: 420px;
+    margin-top: 100px;
+    margin-left: -7px;
+    margin-bottom: -10px;
+    padding-left: 140px;
+    padding-top: 55px;
+    display: flex;
+    gap: 130px;
+    background-color: #f9fafa;
+}
+
+#footer>div:first-child {
+    /* border: 1px solid teal; */
+    width: 15%;
+    height: 170px;
+}
+
+#social>div {
+    /* border: 1px solid black; */
+    height: 20px;
+    width: 30px;
+}
+
+#social {
+    display: flex;
+    gap: 10px;
+    margin-left: 3px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#social>div>img {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.ft-txt {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #556575
+}
+
+#links {
+    /* border: 1px solid teal; */
+    width: 65%;
+    display: flex;
+    gap: 70px;
+}
+
+#links>div {
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 100%;
+
+}
+
+.ft-head {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+}
+
+.ft-p {
+  margin-top: 15px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #556575;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+#links>div>p:first-child {
+    margin-top: -2px;
+}
+@media screen and (max-width: 1000px) {
+
+    .heading h1{
+        color: #ffff;
+        font-size: 2rem;
+      letter-spacing: 2px;
+      -webkit-text-stroke: 2px black;
+    }
+    .heading h1 span{
+        color: #fff;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        z-index: 1;
+       transition: all 1.5s;
+    }
+  }

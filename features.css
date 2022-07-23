@@ -6,6 +6,18 @@
     font-family: 'Poppins', sans-serif;
     font-size: inherit;
 }
+.nav{
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#class1{
+    color: black;
+    cursor: pointer;
+}
 .container{
     width: 100%;
     height: 700px;
@@ -16,7 +28,13 @@
     top: 0;
     left: 0;
     overflow: hidden;
+    color: #fff;
 }
+.container.active{
+    filter:blur(20px);
+    pointer-events:none;
+    user-select: none;
+    }
 .container .content{
     width: 100%;
     margin: auto;
@@ -262,4 +280,87 @@
     color: #ffff;
     cursor: pointer;
     z-index: 10;
+}
+#footer {
+    /* border: 1px solid red; */
+    width: 101.1%;
+    height: 420px;
+    margin-top: 100px;
+    margin-left: -7px;
+    margin-bottom: -10px;
+    padding-left: 140px;
+    padding-top: 55px;
+    display: flex;
+    gap: 130px;
+    background-color: #f9fafa;
+    font-size: 1rem;
+}
+
+#footer>div:first-child {
+    /* border: 1px solid teal; */
+    width: 15%;
+    height: 170px;
+}
+
+#social>div {
+    /* border: 1px solid black; */
+    height: 20px;
+    width: 30px;
+}
+
+#social {
+    display: flex;
+    gap: 10px;
+    margin-left: 3px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#social>div>img {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.ft-txt {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #556575
+}
+
+#links {
+    /* border: 1px solid teal; */
+    width: 65%;
+    display: flex;
+    gap: 70px;
+}
+
+#links>div {
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 100%;
+
+}
+
+.ft-head {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+}
+
+.ft-p {
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #556575;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+#links>div>p:first-child {
+    margin-top: -2px;
 }
