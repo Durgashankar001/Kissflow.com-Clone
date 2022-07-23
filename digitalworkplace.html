@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Workplace | Overview | Kissflow Digital Workplace platform | kissflow.com</title>
-    <link rel = "icon" href ="https://kissflow.com/hubfs/kf_new_logo.png" type = "image/x-icon">
+    <title>
+      Digital Workplace | Overview | Kissflow Digital Workplace platform |
+      kissflow.com
+    </title>
+    <link
+      rel="icon"
+      href="https://kissflow.com/hubfs/kf_new_logo.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="dw.css" />
     <link rel="stylesheet" href="./navbar/style.css" />
     <script
@@ -416,27 +423,30 @@
       window.location.href = "./digitalworkplace.html";
     };
     let sign_data = JSON.parse(localStorage.getItem("sign"));
-    if(sign_data==null){
-  document.getElementById("login").innerText="Login"
-  document.getElementById("login").style.marginRight="8px"
-}else{
-  document.getElementById("login").innerText="Log Out"
-  document.getElementById("login").style.marginRight="8px"
-}
-document.getElementById("workplace").addEventListener("click",function(){
-  window.location.href="digitalworkplace.html"
-})
-document.getElementById("pr").addEventListener("click",function(){
-  window.location.href="pricing.html"
-})
-document.getElementById("cr").addEventListener("click",function(){
-  window.location.href="customer.html"
-})
-document.getElementById("gr").addEventListener("click",function(){
-  window.location.href="customer.html"
-})
-document.getElementById("gr1").addEventListener("click",function(){
-  window.location.href="customer.html"
-})
+    if (sign_data == null) {
+      document.getElementById("login").innerText = "Login";
+      document.getElementById("login").style.marginRight = "8px";
+    } else {
+      document.getElementById("login").innerText = "Log Out";
+      document.getElementById("login").style.marginRight = "8px";
+    }
+    document.getElementById("workplace").addEventListener("click", function () {
+      window.location.href = "digitalworkplace.html";
+    });
+    document.getElementById("pr").addEventListener("click", function () {
+      window.location.href = "pricing.html";
+    });
+    document.getElementById("cr").addEventListener("click", function () {
+      window.location.href = "customer.html";
+    });
+    document.getElementById("gr").addEventListener("click", function () {
+      window.location.href = "pricing.html";
+    });
+    document.getElementById("gr1").addEventListener("click", function () {
+      window.location.href = "pricing.html";
+    });
+    document.getElementById("hm").addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
   </script>
 </html>
