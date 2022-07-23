@@ -218,7 +218,40 @@ a{
     text-align: center;
     border: 1px solid blue;
 }
+#container11{
+    /* border: 1px solid red; */
+    font-size: 18px;
+    width: 80%;
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    margin-top: 70px;
+    line-height: 30px;
+}
+#container11>div{
+    /* border: 1px solid green; */
+    padding: 20px;
+    /* text-align: center; */
 
+}
+#container11>div>p{
+    color: rgb(56, 55, 55);
+    text-align: left;
+}
+#container11>div>img{
+    padding-top: 20px;
+}
+#container11>div>p:hover{
+    cursor: pointer;
+    
+}
+#container12{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    color: rgb(48, 47, 47);
+    line-height: 10px;
+}
 
 
 
