@@ -7,16 +7,16 @@
     <title>Pricing</title>
 
     <link rel="stylesheet" href="pricing_page.css" />
-    <link rel="stylesheet" href="./navbar/style.css">
-    <script src="https://kit.fontawesome.com/bd84d8e83c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./navbar/style.css" />
+    <script
+      src="https://kit.fontawesome.com/bd84d8e83c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="nav">
-
-    </div>
+    <div class="nav"></div>
     <div id="top1">
       <h1>Simple Pricing</h1>
-
 
       <div id="bill">
         <div class="price_div">
@@ -27,14 +27,13 @@
           </p>
           <h3>Monthly,Yearly</h3>
           <p class="symbol">$</p>
-          <h1 class="num">10</h1>
-          <div class="per_user"><p>Per User Per Month</p></div>
+          <h1 class="num , num2">10</h1>
+          <div><p class="peruser2">Per User Per Month</p></div>
           <p class="">50 users minimum, $6,000 billed annually</p>
           <button>Get Started</button>
         </div>
 
-
-        <div class="price_div" id="2" >
+        <div class="price_div" id="2">
           <h2>Corporate</h2>
           <p class="p">
             For growing organizations looking for a single work platform to
@@ -42,21 +41,26 @@
           </p>
           <p class="symbol">$</p>
           <h3 class="num">20</h3>
-          <div  class="per_user" ><p></p>Per user Per month </p></div>
-          <p >100 users minimum, $24,000 billed annually</p>
+          <div><p class="per_user">Per user Per month</p></div>
+          <p>100 users minimum, $24,000 billed annually</p>
           <button>Get Started</button>
         </div>
 
-
         <div class="price_div c1">
           <h2>Enterprise</h2>
-          <div><img src="https://hubspot1.kissflow.com/hubfs/KF%20Brand%20Home/Highlight.svg" alt=""></div>
-          <p class="p">
-            For mid to large enterprises who need a comprehensive solution that can scale across the organization
+          <div>
+            <img
+              src="https://hubspot1.kissflow.com/hubfs/KF%20Brand%20Home/Highlight.svg"
+              alt=""
+            />
+          </div>
+          <p class="p10">
+            For mid to large enterprises who need a comprehensive solution that
+            can scale across the organization
           </p>
-          
+
           <h1 id="getque">Get a quote</h1>
-          <p >Get a custom quote based on your needs</p>
+          <p>Get a custom quote based on your needs</p>
           <button id="btn">Contact Us</button>
         </div>
       </div>
@@ -64,21 +68,47 @@
     <!-- Worldwide Companies -->
     <h2 id="title">Trusted by 10,000+ companies worldwide</h2>
     <div id="logo1">
-      <div><img src="https://kissflow.com/hubfs/KF%20Brand%20Home/pepsi-1.svg" alt=""></div>
-      <div><img src="https://kissflow.com/hubfs/KF%20Brand%20Home/Flipkart-1.svg" alt=""></div>
-      <div><img src="https://kissflow.com/hubfs/KF%20Brand%20Home/Tech.svg" alt=""></div>
-      <div><img src="https://kissflow.com/hubfs/KF%20Brand%20Home/Hubspot.svg" alt=""></div>
-      <div><img src="https://kissflow.com/hubfs/KF%20Brand%20Home/luxotinca.svg" alt=""></div>
-      <div><img src="https://kissflow.com/hubfs/KF%20Brand%20Home/7-Eleven-Emblem_1.svg" alt=""></div>
+      <div>
+        <img
+          src="https://kissflow.com/hubfs/KF%20Brand%20Home/pepsi-1.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://kissflow.com/hubfs/KF%20Brand%20Home/Flipkart-1.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://kissflow.com/hubfs/KF%20Brand%20Home/Tech.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://kissflow.com/hubfs/KF%20Brand%20Home/Hubspot.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://kissflow.com/hubfs/KF%20Brand%20Home/luxotinca.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://kissflow.com/hubfs/KF%20Brand%20Home/7-Eleven-Emblem_1.svg"
+          alt=""
+        />
+      </div>
     </div>
-
-
-
 
     <!-- day3 -->
 
- 
-     <div id="lastdiv">
+    <div id="lastdiv">
       <div id="btns">
         <button></button>
         <button></button>
@@ -86,77 +116,69 @@
         <button></button>
       </div>
       <div>
-      <h1>Experience the Low-Code No-Code Work Platform</h1></div>
+        <h1>Experience the Low-Code No-Code Work Platform</h1>
+      </div>
       <button id="btn1">Get Started</button>
-      <button id="btn2" >Book a Demo</button>
-      <img src="https://kissflow.com/hubfs/image_79.svg" alt="">
-     </div>
-
-     <div id="footer">
-
+      <button id="btn2">Book a Demo</button>
+      <img src="https://kissflow.com/hubfs/image_79.svg" alt="" />
     </div>
+
+    <div id="footer"></div>
   </body>
   <script type="module">
-        import navbar from "../component/navbar.js"
-document.querySelector(".nav").innerHTML = navbar()
+    import navbar from "../component/navbar.js";
+    document.querySelector(".nav").innerHTML = navbar();
 
-document.getElementById("login").addEventListener("click",toggle);
-document.getElementById("class1").addEventListener("click",toggle);
-document.getElementById("signin-btn1").addEventListener("click",signup);
+    document.getElementById("login").addEventListener("click", toggle);
+    document.getElementById("class1").addEventListener("click", toggle);
+    document.getElementById("signin-btn1").addEventListener("click", signup);
 
-    function toggle(){
-    // var blur=document.querySelector(".container");
-    // blur.classList.toggle('active')
-    var popup=document.getElementById("popup");
-    popup.classList.toggle('active')
-   }
-
-    function signup(){
-        window.location.href="signin.html"
+    function toggle() {
+      // var blur=document.querySelector(".container");
+      // blur.classList.toggle('active')
+      var popup = document.getElementById("popup");
+      popup.classList.toggle("active");
     }
 
-
-    function submitData(event){
-event.preventDefault()
-
-
-let form=document.getElementById("form")
-
-let user_name=form.user_name.value;
-let email= form.email.value;
-let password=form.password.value;
-
-let all_data= new Details(user_name,email,password)
-
-if(user_name =="" || email =="" || password=="" ){
-    alert("fill all details")
-}
-else{
-    let user= JSON.parse(localStorage.getItem("user")) || []
-user.push(all_data)
-localStorage.setItem("user",JSON.stringify(user))
-window.location.href="signin.html"
-}
-
-    }
- 
-
-    class Details{
-        constructor(user_name,email,password){
-          this.user_name=user_name;
-          this.email=email;
-          this.password=password
-        }
+    function signup() {
+      window.location.href = "signin.html";
     }
 
+    function submitData(event) {
+      event.preventDefault();
 
-import footer from "../component/footer.js"
+      let form = document.getElementById("form");
 
-document.getElementById("footer").innerHTML = footer();
+      let user_name = form.user_name.value;
+      let email = form.email.value;
+      let password = form.password.value;
 
-document.getElementById("workplace").onclick =() =>{
-    window.location.href="./digitalworkplace.html"
-}
+      let all_data = new Details(user_name, email, password);
 
+      if (user_name == "" || email == "" || password == "") {
+        alert("fill all details");
+      } else {
+        let user = JSON.parse(localStorage.getItem("user")) || [];
+        user.push(all_data);
+        localStorage.setItem("user", JSON.stringify(user));
+        window.location.href = "signin.html";
+      }
+    }
+
+    class Details {
+      constructor(user_name, email, password) {
+        this.user_name = user_name;
+        this.email = email;
+        this.password = password;
+      }
+    }
+
+    import footer from "../component/footer.js";
+
+    document.getElementById("footer").innerHTML = footer();
+
+    document.getElementById("workplace").onclick = () => {
+      window.location.href = "./digitalworkplace.html";
+    };
   </script>
 </html>

@@ -1,8 +1,5 @@
-
-
-let navbar = () =>
-{
-    return `    <div id="container">
+let navbar = () => {
+  return `    <div id="container">
    
     <div id="navbar">
 
@@ -164,7 +161,7 @@ let navbar = () =>
                 </ul>
             </li>
             <li id="login" onclick="toggle()">Login<a href="#"></a></li>
-            <button class="login-button">Get Started</button>
+            <button class="login-button" id="getbtn" >Get Started</button>
         </ul>
 
     </div>
@@ -200,7 +197,7 @@ let navbar = () =>
         </div>
     </div>
    
-</div>`
-}
+</div>`;
+};
 
-export default navbar
+export default navbar;
