@@ -1,209 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-            font-family:Graphik Web Regular,sans-serif!important;  
-        }
-        #main-div{
-            width:100vw;
-            height:100vh;
-            display:flex;
-            /* border: 1px solid; */
-
-        }
-        #left-div{
-            width:33%;
-            height:100%;
-            /* border: 1px solid; */
-            display: flex;
-            display: block;
-            justify-content: center;
-        }
-        #right-div{
-            width:67%;
-            height:100%;
-            /* border: 1px solid; */
-        }
-       .right-img{
-        width:100%;
-        height:100%;
-       }
-       .logo{
-        width:150px;
-        height:44px;
-        margin-bottom: 30px;;
-       }
-       .left-inner-div{
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Graphik Web Regular, sans-serif !important;
+      }
+      #main-div {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        /* border: 1px solid; */
+      }
+      #left-div {
+        width: 33%;
+        height: 100%;
+        /* border: 1px solid; */
+        display: flex;
+        display: block;
+        justify-content: center;
+      }
+      #right-div {
+        width: 67%;
+        height: 100%;
+        /* border: 1px solid; */
+      }
+      .right-img {
+        width: 100%;
+        height: 100%;
+      }
+      .logo {
+        width: 150px;
+        height: 44px;
+        margin-bottom: 30px;
+      }
+      .left-inner-div {
         /* border:1px solid; */
-        width:400px;
-        height:20rem;
-        margin-top:90px;
+        width: 400px;
+        height: 20rem;
+        margin-top: 90px;
         margin-left: 50px;
         /* background-color: black; */
-       }
-       form{
+      }
+      form {
         display: block;
-       }
-       input{
-        width:100%;
-        height:40px;
+      }
+      input {
+        width: 100%;
+        height: 40px;
         margin-bottom: 20px;
         /* border:none; */
         /* border-top: white; */
-    
-       }
-       p{
-        color:gray;
-       }
-       button{
-        width:100%;
-        height:50px;
-        background-color:  #4aa147;
-        color:#fff;
+      }
+      p {
+        color: gray;
+      }
+      button {
+        width: 100%;
+        height: 50px;
+        background-color: #4aa147;
+        color: #fff;
         border: none;
-        margin-top:10px;
+        margin-top: 10px;
         margin-bottom: 10px;
         font-size: 15px;
-            
-        
-       }
-       .lower-div{
+      }
+      .lower-div {
         text-align: center;
         /* border: 1px solid; */
-       }
-       .sub-div{
+      }
+      .sub-div {
         display: flex;
         text-align: center;
-      justify-content: center;
+        justify-content: center;
         /*   place-items: center;
         align-items: center; */
-        margin-top: 20px;;
-        
-       }
-     .detail{
-        width:40%;
-        height:50px;
+        margin-top: 20px;
+      }
+      .detail {
+        width: 40%;
+        height: 50px;
         /* border:1px solid; */
         /* padding */
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         padding-top: 12px;
-        margin: 10px;;
+        margin: 10px;
         display: flex;
-     }
-     .signin-img{
-        width:23px;
+      }
+      .signin-img {
+        width: 23px;
         height: 22px;
         margin-right: 9px;
         padding-left: 8px;
-     }
-     .last-box{
+      }
+      .last-box {
         text-align: center;
-        width:84%;
-        height:50px;
+        width: 84%;
+        height: 50px;
         display: flex;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         margin-left: 40px;
         margin-top: 20px;
         padding-top: 16px;
         padding-left: 80px;
-     }
-     button:hover{
+      }
+      button:hover {
         cursor: pointer;
-     }
-  
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="main-div">
-        <div id="left-div" >
-     <div class="left-inner-div">
-        <img class="logo" src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/logo.png" alt="">
-        <form onsubmit="submitData(event)" id="form">
-
-         
+      <div id="left-div">
+        <div class="left-inner-div">
+          <img
+            class="logo"
+            src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/logo.png"
+            alt=""
+          />
+          <form onsubmit="submitData(event)" id="form">
             <p>Username</p>
-            <input id="signin_username" type="text">
-    
+            <input id="signin_username" type="text" />
+
             <p>Password</p>
-            <input id="signin_password" type="password" name="" >
-            
+            <input id="signin_password" type="password" name="" />
+
             <button>SIGN IN</button>
-        </form>
-     </div>
-     <div class="lower-div">
-        <p>or</p>
-        <div class="sub-div">
+          </form>
+        </div>
+        <div class="lower-div">
+          <p>or</p>
+          <div class="sub-div">
             <div class="detail">
-                <img  class="signin-img" src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/google.png" alt="">
-                <p>Sign in with Google<p>
+              <img
+                class="signin-img"
+                src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/google.png"
+                alt=""
+              />
+              <p>Sign in with Google</p>
+              <p></p>
             </div>
-          <div class="detail">
-            <img class="signin-img"  src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/office.png" alt="">
-            <p> Sign in with Office 365<p>
+
+            <div class="detail">
+              <img
+                class="signin-img"
+                src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/office.png"
+                alt=""
+              />
+              <p>Sign in with Office 365</p>
+              <p></p>
+            </div>
           </div>
         </div>
-
-     </div>
-     <div>
-        <div class="last-box">
-            <img class="signin-img" src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/saml.png" alt="">
-            <p > Sign in with Single sign-on<p>
-          </div> 
-     </div>
-
-
+        <div>
+          <div class="last-box">
+            <img
+              class="signin-img"
+              src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/saml.png"
+              alt=""
+            />
+            <p>Sign in with Single sign-on</p>
+            <p></p>
+          </div>
         </div>
+      </div>
 
-
-
-
-
-     
-        <div id="right-div" >
-            <img class="right-img" src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/side-image.png" alt="">
-        </div>
-
-       
+      <div id="right-div">
+        <img
+          class="right-img"
+          src="https://dtvnwsyj9z2ds.cloudfront.net/8487/wiz/flow/static/shared/images/side-image.png"
+          alt=""
+        />
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <script>
-   
+  let user = JSON.parse(localStorage.getItem("user"));
+  let flag = false;
+  function submitData(event) {
+    event.preventDefault();
+    let form = document.getElementById("form");
 
-   let user= JSON.parse(localStorage.getItem("user")) 
-   let flag=false;
-function submitData(event){
-event.preventDefault()
-let form=document.getElementById("form")
+    let signin_username = form.signin_username.value;
+    let signin_password = form.signin_password.value;
 
-let signin_username=form.signin_username.value;
-let signin_password=form.signin_password.value;
-
-user.forEach((el,i)=>{
-    if(user[i].user_name==signin_username &&  user[i].password== signin_password){
-        flag==true
-      
-      
+    user.forEach((el, i) => {
+      if (el.user_name == signin_username && el.password == signin_password) {
+        flag == true;
+      }
+    });
+    if (flag == true) {
+      alert("sign in Successful");
+      window.location.href = "index.html";
+    } else {
+      alert("create an account first");
     }
-  
-})
-if(flag==true){
-    alert("sign in Successful")
-        window.location.href="navbar";
-}
-else{
-    alert("create an account first")
-   }
-
-}
-
-
+  }
 </script>

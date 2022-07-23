@@ -1,66 +1,60 @@
-import footer from "../component/footer.js"
+import footer from "../component/footer.js";
 
 document.getElementById("footer").innerHTML = footer();
-import navbar from "../component/navbar.js"
-document.getElementById("nav").innerHTML = navbar()
-console.log(navbar())
+import navbar from "../component/navbar.js";
+document.getElementById("nav").innerHTML = navbar();
+console.log(navbar());
 
-document.getElementById("login").addEventListener("click",toggle);
-document.getElementById("class1").addEventListener("click",toggle);
-document.getElementById("signin-btn1").addEventListener("click",signup);
+document.getElementById("login").addEventListener("click", toggle);
+document.getElementById("class1").addEventListener("click", toggle);
+document.getElementById("signin-btn1").addEventListener("click", signup);
 
-    function toggle(){
-    var blur=document.getElementById("container1");
-    blur.classList.toggle('active')
-    document.getElementById("good_customers").classList.toggle("active")
-    var popup=document.getElementById("popup");
-    popup.classList.toggle('active')
-   }
-
-    function signup(){
-        window.location.href="signin.html"
-    }
-
-
-    function submitData(event){
-event.preventDefault()
-
-
-let form=document.getElementById("form")
-
-let user_name=form.user_name.value;
-let email= form.email.value;
-let password=form.password.value;
-
-let all_data= new Details(user_name,email,password)
-
-if(user_name =="" || email =="" || password=="" ){
-    alert("fill all details")
-}
-else{
-    let user= JSON.parse(localStorage.getItem("user")) || []
-user.push(all_data)
-localStorage.setItem("user",JSON.stringify(user))
-window.location.href="signin.html"
+function toggle() {
+  var blur = document.getElementById("container1");
+  blur.classList.toggle("active");
+  document.getElementById("good_customers").classList.toggle("active");
+  var popup = document.getElementById("popup");
+  popup.classList.toggle("active");
 }
 
-    }
- 
+function signup() {
+  window.location.href = "signin.html";
+}
+document.getElementById("form").addEventListener("submit", submitData);
+function submitData(event) {
+  event.preventDefault();
 
-    class Details{
-        constructor(user_name,email,password){
-          this.user_name=user_name;
-          this.email=email;
-          this.password=password
-        }
-    }
+  let form = document.getElementById("form");
 
+  let user_name = form.user_name.value;
+  let email = form.email.value;
+  let password = form.password.value;
 
+  let all_data = new Details(user_name, email, password);
+
+  if (user_name == "" || email == "" || password == "") {
+    alert("fill all details");
+  } else {
+    let user = JSON.parse(localStorage.getItem("user")) || [];
+    user.push(all_data);
+    localStorage.setItem("user", JSON.stringify(user));
+    window.location.href = "signin.html";
+  }
+}
+
+class Details {
+  constructor(user_name, email, password) {
+    this.user_name = user_name;
+    this.email = email;
+    this.password = password;
+  }
+}
 
 let video = document.getElementById("home-video-content");
 let button = document.getElementById("play");
 
-let source = 'https://www.youtube.com/embed/VpeWhXL8AG8?autoplay=1&showinfo=0&modestbranding=1&rel=0&mute=0&vq=hd720';
+let source =
+  "https://www.youtube.com/embed/VpeWhXL8AG8?autoplay=1&showinfo=0&modestbranding=1&rel=0&mute=0&vq=hd720";
 
 button.addEventListener("click", function (event) {
   video.innerHTML = `
@@ -71,11 +65,10 @@ button.addEventListener("click", function (event) {
     
       </div>
       </div>
-      </div>`
+      </div>`;
 
   document.getElementById("container").style.filter = "blur(10px)";
-
-})
+});
 
 // document.getElementById("home-video").addEventListener("click", function(event){
 //     video.innerHTML = "";
@@ -101,5 +94,9 @@ for (let i = 0; i < tabHeaderNodes.length; i++) {
     tabBody.querySelector(".active").classList.remove("active");
     tabBodyNodes[i].classList.add("active");
     // tabIndicator.style.left = `calc(calc(calc(14% - 5px) * ${i}) + 30px)`
-  })
+  });
 }
+
+document.getElementById("getbtn").addEventListener("click", function () {
+  window.location.href = "signin.html";
+});
