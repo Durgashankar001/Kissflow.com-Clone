@@ -1,6 +1,60 @@
 import footer from "../component/footer.js"
 
 document.getElementById("footer").innerHTML = footer();
+import navbar from "../component/navbar.js"
+document.getElementById("nav").innerHTML = navbar()
+console.log(navbar())
+
+document.getElementById("login").addEventListener("click",toggle);
+document.getElementById("class1").addEventListener("click",toggle);
+document.getElementById("signin-btn1").addEventListener("click",signup);
+
+    function toggle(){
+    var blur=document.getElementById("container1");
+    blur.classList.toggle('active')
+    document.getElementById("good_customers").classList.toggle("active")
+    var popup=document.getElementById("popup");
+    popup.classList.toggle('active')
+   }
+
+    function signup(){
+        window.location.href="signin.html"
+    }
+
+
+    function submitData(event){
+event.preventDefault()
+
+
+let form=document.getElementById("form")
+
+let user_name=form.user_name.value;
+let email= form.email.value;
+let password=form.password.value;
+
+let all_data= new Details(user_name,email,password)
+
+if(user_name =="" || email =="" || password=="" ){
+    alert("fill all details")
+}
+else{
+    let user= JSON.parse(localStorage.getItem("user")) || []
+user.push(all_data)
+localStorage.setItem("user",JSON.stringify(user))
+window.location.href="signin.html"
+}
+
+    }
+ 
+
+    class Details{
+        constructor(user_name,email,password){
+          this.user_name=user_name;
+          this.email=email;
+          this.password=password
+        }
+    }
+
 
 
 let video = document.getElementById("home-video-content");

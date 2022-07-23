@@ -7,13 +7,18 @@
     <title>Checkout | Kissflow Digital Workplace platform | kissflow.com</title>
     <link rel = "icon" href ="https://kissflow.com/hubfs/kf_new_logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="./navbar/style.css">
+    <script src="https://kit.fontawesome.com/bd84d8e83c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="nav">
+
+    </div>
     <div class="container">
         <div class="section1">
-            <!-- <div class="image_section">
+            <div class="image_section">
                 <img src="https://drive.google.com/uc?export=view&id=1lk_D4gsxEVCG5ZXNoJqvuMt82S8AOwx2" alt="">
-            </div> -->
+            </div>
             <div class="heading">
                 <h1>To win the <span>MARKETPLACE</span>  <br>
                     you must first win <br>
@@ -100,4 +105,172 @@
             </div>
         </div>
     </div>
+    <div class="last_section">
+        <div class="heading1">
+            <h1>
+                Enter Your Credit Details
+            </h1>
+        </div> 
+        <div class="section4">
+            <div class="card_container">
+                <div class="front">
+                    <div class="image">
+                        <img src="https://drive.google.com/uc?export=view&id=1KfgC0DAoVmEcJgcveYKpu67lKnTpSs06" alt="">
+                        <img src="https://drive.google.com/uc?export=view&id=1HG-aichcF-mCTNoerHYvwa13Y9dazXbZ" alt="">
+                    </div>
+                    <div class="card_number_box">
+                        ################
+                    </div>
+                    <div class="flexBox">
+                        <div class="box">
+                            <span>CARD HOLDER</span>
+                            <div class="card_holder_name">
+                                FULL NAME
+                            </div>
+                        </div>
+                        <div class="box">
+                            <span>EXPIRES</span>
+                            <div class="expiration">
+                                <span class="exp_month">MM</span>
+                                <span class="exp_year">YY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="stripe"></div>
+                        <div class="box">
+                            <span>CVV</span>
+                            <div class="cvv_box"></div>
+                            <img src="https://drive.google.com/uc?export=view&id=1HG-aichcF-mCTNoerHYvwa13Y9dazXbZ" alt="">
+                        </div>
+                </div>
+            </div>
+            <div class="form_div">
+            <form action="" id="form1">
+            <div class="inputBox">
+                <span>card number</span>
+                <input type="text" maxlength="16" class="card_number_input" required>
+            </div>
+            <div class="inputBox">
+                <span>card holder</span>
+                <input type="text" class="card_holder_input" required>
+            </div>
+            <div class="flexBox">
+                <div class="inputBox">
+                    <span>expiration mm</span>
+                    <select name="" id="" class="month_input" required>
+                        <option value="month" selected disabled>MONTH</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>expiration yy</span>
+                    <select name="" id="" class="year_input" required>
+                        <option value="year" selected disabled>YEAR</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>CVV</span>
+                    <input type="text" maxlength="4" name="" id="" class="cvv_input" required>
+                </div>
+            </div>
+            <input type="submit" value="SUBMIT" class="submit_btn" id="submitBtn">
+        </form>
+        <div class="otp" id="otpBox">
+            <h1>Enter Your Otp</h1>
+            <div class="inputBox">
+                <input type="text" maxlength="1" id="one">
+                <input type="text" maxlength="1" id="two">
+                <input type="text" maxlength="1" id="three">
+                <input type="text" maxlength="1" id="four">
+            </div>
+            <p>Did not get OTP ? <a href="#form" id="resend">Resend</a></p>
+
+            <button id="otpBtn">Enter</button>
+        </div>
     </div>
+        </div>
+    </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+<script>
+    function toggle(){
+    var blur=document.querySelector(".container");
+    blur.classList.toggle('active')
+    var popup=document.getElementById("popup");
+    popup.classList.toggle('active')
+   }
+
+    function signup(){
+        window.location.href="signin.html"
+    }
+
+
+    function submitData(event){
+event.preventDefault()
+// window.location.href="signin.html"
+
+let form=document.getElementById("form")
+
+let user_name=form.user_name.value;
+let email= form.email.value;
+let password=form.password.value;
+
+let all_data= new Details(user_name,email,password)
+
+if(user_name =="" || email =="" || password=="" ){
+    alert("fill all details")
+}
+else{
+    let user= JSON.parse(localStorage.getItem("user")) || []
+user.push(all_data)
+localStorage.setItem("user",JSON.stringify(user))
+window.location.href="signin.html"
+}
+
+    }
+ 
+
+    class Details{
+        constructor(user_name,email,password){
+          this.user_name=user_name;
+          this.email=email;
+          this.password=password
+        }
+    }
+"126R1AIE2hkWkaoMr8LdSReXGX3W9Mdi9"
+"1lk_D4gsxEVCG5ZXNoJqvuMt82S8AOwx2"
+"https://cdn.pixabay.com/photo/2018/01/21/10/02/shaking-hands-3096229_960_720.jpg"
+"https://drive.google.com/uc?export=view&id=1lk_D4gsxEVCG5ZXNoJqvuMt82S8AOwx2"
+"https://drive.google.com/file/d/1to84KeEWc9qfIiGkVBiYYAjSDc2xegQf/view?usp=sharing"
+"https://drive.google.com/file/d/1HG-aichcF-mCTNoerHYvwa13Y9dazXbZ/view?usp=sharing"
+"https://drive.google.com/file/d/1KfgC0DAoVmEcJgcveYKpu67lKnTpSs06/view?usp=sharing"
+</script>
+<script src="./checkout.js" type="module"></script>
+
+</html>
