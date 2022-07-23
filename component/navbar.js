@@ -5,7 +5,7 @@ let navbar = () => {
 
        
         <ul class="first-div">
-            <img src="https://kissflow.com/hubfs/KF%20Brand%20Home/kissflow.svg" alt="">
+            <img id= "hm" src="https://kissflow.com/hubfs/KF%20Brand%20Home/kissflow.svg" alt="">
             <li class="platform">Platform  <i class="fa-solid fa-angle-down"></i><a href="#"></a>
                 <div class="dropdown-div-1" >
                     <div class="left-div">

@@ -167,6 +167,10 @@ iframe {
     z-index: 1;
     width: auto;
     cursor: pointer;
+
+}
+.video-bg img:last-child{
+    margin-left: -85px;
 }
 
 .videoplay-icon {
@@ -657,7 +661,7 @@ iframe {
     width: 590px;
     position: relative;
     top: -72px;
-    left: 63px;
+    left: 330px;
 }
 
 #cta>div:last-child::after {
@@ -753,4 +757,8 @@ iframe {
 
 #links>div>p:first-child {
     margin-top: -2px;
+}
+
+#bachi{
+    margin-right: -500px;
 }
