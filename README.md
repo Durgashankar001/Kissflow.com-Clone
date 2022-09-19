@@ -8,9 +8,7 @@ Kissflow is simple for business users to create powerful apps, processes, or cas
 
 ## Getting Started
 
-### Dependencies
 
-* React , npm 
 
 ### Table Of Content
 * Home Page
@@ -21,21 +19,18 @@ Kissflow is simple for business users to create powerful apps, processes, or cas
 
 
 
+### Tech Stack
+
+* JavaScript
+* HTML
+* CSS
+* Local Storage
+
 ### Installing
 
 * Just clone it from here.
-* Go to your file //cd Shoping-app
-* npm install
+* Go to your file //cd --file_name--
 
-### Executing program
-
-* npm run start
-* Keep in mind every packages you have downloaded before start.
-```
-npm install
-
-npm run start
-```
 
 ## Help
 
