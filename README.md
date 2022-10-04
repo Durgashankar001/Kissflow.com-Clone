@@ -58,4 +58,4 @@ If facing any kind of issue contact with us.
 
 ## License
 
-This project is licensed under the Kissflow.com Cloned by us
+This project is licensed under the Kissflow.com Cloned by us.
